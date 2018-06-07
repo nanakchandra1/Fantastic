@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Bold.otf">
+            <string>SFUIText-Bold</string>
+        </array>
+        <array key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelVideoTableViewCell" rowHeight="293" id="Rfv-sq-Gsh" customClass="ChannelVideoTableViewCell" customModule="Fantasticoh_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="293"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rfv-sq-Gsh" id="VPr-vS-JNf">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="292.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jenifier loorance" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwF-cc-bvP">
+                        <rect key="frame" x="10" y="10" width="458" height="17.5"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gyI-2O-LZZ">
+                        <rect key="frame" x="10" y="32.5" width="457" height="219"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A7j-a2-LwN">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMV-6f-0Qe">
+                        <rect key="frame" x="0.0" y="269" width="478" height="19"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Bold" family="SF UI Text" pointSize="15.700000762939453"/>
+                        <inset key="imageEdgeInsets" minX="135" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="See All" image="ic_dashboard_sell_arrow">
+                            <color key="titleColor" red="1" green="0.084040851149999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gyI-2O-LZZ" firstAttribute="leading" secondItem="VPr-vS-JNf" secondAttribute="leading" constant="10" id="4tV-Tr-P8X"/>
+                    <constraint firstAttribute="trailing" secondItem="gMV-6f-0Qe" secondAttribute="trailing" id="6vv-tx-y59"/>
+                    <constraint firstItem="dwF-cc-bvP" firstAttribute="top" secondItem="VPr-vS-JNf" secondAttribute="top" constant="10" id="DCe-fv-Ocz"/>
+                    <constraint firstItem="gyI-2O-LZZ" firstAttribute="top" secondItem="dwF-cc-bvP" secondAttribute="bottom" constant="5" id="ZL1-I1-qfi"/>
+                    <constraint firstItem="dwF-cc-bvP" firstAttribute="leading" secondItem="VPr-vS-JNf" secondAttribute="leading" constant="10" id="cTu-cz-oHS"/>
+                    <constraint firstAttribute="bottom" secondItem="gMV-6f-0Qe" secondAttribute="bottom" constant="5" id="eNc-R7-5zc"/>
+                    <constraint firstItem="gMV-6f-0Qe" firstAttribute="leading" secondItem="VPr-vS-JNf" secondAttribute="leading" id="i6g-C1-Rxx"/>
+                    <constraint firstItem="gMV-6f-0Qe" firstAttribute="top" secondItem="gyI-2O-LZZ" secondAttribute="bottom" constant="17.5" id="ndU-yg-N5J"/>
+                    <constraint firstAttribute="trailing" secondItem="dwF-cc-bvP" secondAttribute="trailing" constant="10" id="rHs-aG-fOl"/>
+                    <constraint firstAttribute="trailing" secondItem="gyI-2O-LZZ" secondAttribute="trailing" constant="11" id="vCM-MW-3H0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="PfC-No-kwJ"/>
+            <connections>
+                <outlet property="bottomBtn" destination="gMV-6f-0Qe" id="kBI-S7-Ewo"/>
+                <outlet property="headerLabel" destination="dwF-cc-bvP" id="Hfk-5x-Ibv"/>
+                <outlet property="videoCollectionView" destination="gyI-2O-LZZ" id="5WS-YJ-bBX"/>
+            </connections>
+            <point key="canvasLocation" x="348" y="-201.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dashboard_sell_arrow" width="8" height="14"/>
+    </resources>
+</document>

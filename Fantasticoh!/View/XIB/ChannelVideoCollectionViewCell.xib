@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelVideoCollectionViewCell" rowHeight="291" id="KGk-i7-Jjw" customClass="ChannelVideoCollectionViewCell" customModule="Fantasticoh_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="290.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dp1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="seJ-UJ-Lhi">
+                        <rect key="frame" x="0.0" y="0.0" width="294" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="Ql6-mf-fbI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-uj-ydP">
+                        <rect key="frame" x="8" y="160" width="270" height="66"/>
+                        <string key="text">Data i efsf sfs Data i efsf sfs  Data i efsf sfs  Data i efsf sfs Data i efsf sfs Data i efsf sfs Data i efsf sfs Data i efsf sfs Data i efsf sfs Data i efsf sfs Data i efsf sfs  Data i efsf sfs v</string>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Min Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIW-fz-ub8">
+                        <rect key="frame" x="113.5" y="264.5" width="67" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="SRG-Fo-RUa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="seJ-UJ-Lhi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4dC-HT-3Ii"/>
+                    <constraint firstItem="UIW-fz-ub8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WrX-Qv-thc"/>
+                    <constraint firstItem="seJ-UJ-Lhi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YCQ-CP-eIk"/>
+                    <constraint firstItem="HZn-uj-ydP" firstAttribute="top" secondItem="seJ-UJ-Lhi" secondAttribute="bottom" constant="10" id="eYj-n9-dZS"/>
+                    <constraint firstAttribute="trailing" secondItem="seJ-UJ-Lhi" secondAttribute="trailing" id="fF2-L8-zOO"/>
+                    <constraint firstAttribute="trailing" secondItem="HZn-uj-ydP" secondAttribute="trailing" constant="16" id="fp3-hj-AzK"/>
+                    <constraint firstItem="HZn-uj-ydP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="glx-Wt-R0Y"/>
+                    <constraint firstAttribute="bottom" secondItem="UIW-fz-ub8" secondAttribute="bottom" constant="10" id="hOp-Ty-ODk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentLabel" destination="HZn-uj-ydP" id="lkv-bc-AOX"/>
+                <outlet property="timeLabel" destination="UIW-fz-ub8" id="VS4-tX-chU"/>
+                <outlet property="videoPreview" destination="seJ-UJ-Lhi" id="J6t-f3-4XB"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="116.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dp1" width="1024" height="768"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Fantasticoh_ {
+  umbrella header "Pods-Fantasticoh!-umbrella.h"
+
+  export *
+  module * { export * }
+}

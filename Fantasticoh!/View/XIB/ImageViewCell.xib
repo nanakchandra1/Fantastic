@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageViewCell" id="gTV-IL-0wX" customClass="ImageViewCell" customModule="Fantasticoh_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="l50-tS-9AB">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="201"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcT-5C-HAV">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="201"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video_play_button" translatesAutoresizingMaskIntoConstraints="NO" id="j4c-WA-5xO">
+                                <rect key="frame" x="164" y="88" width="25" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j4c-WA-5xO" firstAttribute="centerY" secondItem="DcT-5C-HAV" secondAttribute="centerY" id="QtB-uj-fUY"/>
+                            <constraint firstItem="j4c-WA-5xO" firstAttribute="centerX" secondItem="DcT-5C-HAV" secondAttribute="centerX" id="kLD-VE-CL5"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sG7-ik-waR" customClass="YTPlayerView">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="201"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tH5-2n-MXV">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="201"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iwX-Xw-A0M">
+                        <rect key="frame" x="142" y="91" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="5v7-bp-lKO"/>
+                            <constraint firstAttribute="height" constant="20" id="gVl-BT-CUr"/>
+                        </constraints>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hA-ZT-e1g">
+                        <rect key="frame" x="164" y="92" width="67" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are no media/images" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryf-bz-MK6">
+                        <rect key="frame" x="85.5" y="92" width="183" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7hA-ZT-e1g" firstAttribute="leading" secondItem="iwX-Xw-A0M" secondAttribute="trailing" constant="2" id="Bja-W1-Y7H"/>
+                <constraint firstItem="tH5-2n-MXV" firstAttribute="top" secondItem="l50-tS-9AB" secondAttribute="top" id="F0u-99-4FX"/>
+                <constraint firstItem="sG7-ik-waR" firstAttribute="leading" secondItem="l50-tS-9AB" secondAttribute="leading" id="Fr1-DK-SJn"/>
+                <constraint firstItem="sG7-ik-waR" firstAttribute="trailing" secondItem="l50-tS-9AB" secondAttribute="trailing" id="G3e-0P-Cae"/>
+                <constraint firstAttribute="trailing" secondItem="l50-tS-9AB" secondAttribute="trailing" id="PYl-wL-bwW"/>
+                <constraint firstAttribute="bottom" secondItem="l50-tS-9AB" secondAttribute="bottom" id="Qr2-no-a9d"/>
+                <constraint firstItem="DcT-5C-HAV" firstAttribute="bottom" secondItem="l50-tS-9AB" secondAttribute="bottom" id="UN1-Ij-FRc"/>
+                <constraint firstItem="sG7-ik-waR" firstAttribute="top" secondItem="l50-tS-9AB" secondAttribute="top" id="YWr-F6-egQ"/>
+                <constraint firstItem="iwX-Xw-A0M" firstAttribute="centerX" secondItem="tH5-2n-MXV" secondAttribute="centerX" multiplier="0.86" id="arh-iY-Moc"/>
+                <constraint firstItem="DcT-5C-HAV" firstAttribute="leading" secondItem="l50-tS-9AB" secondAttribute="leading" id="com-J7-tYu"/>
+                <constraint firstItem="l50-tS-9AB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e3d-7g-0FT"/>
+                <constraint firstItem="DcT-5C-HAV" firstAttribute="trailing" secondItem="l50-tS-9AB" secondAttribute="trailing" id="eFf-v9-afW"/>
+                <constraint firstItem="l50-tS-9AB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hhd-ak-UEb"/>
+                <constraint firstItem="tH5-2n-MXV" firstAttribute="bottom" secondItem="l50-tS-9AB" secondAttribute="bottom" id="hqk-ld-iz7"/>
+                <constraint firstItem="tH5-2n-MXV" firstAttribute="trailing" secondItem="l50-tS-9AB" secondAttribute="trailing" id="js5-UU-UBR"/>
+                <constraint firstItem="sG7-ik-waR" firstAttribute="bottom" secondItem="l50-tS-9AB" secondAttribute="bottom" id="lCc-Po-dQb"/>
+                <constraint firstItem="ryf-bz-MK6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mzE-Er-o96"/>
+                <constraint firstItem="tH5-2n-MXV" firstAttribute="leading" secondItem="l50-tS-9AB" secondAttribute="leading" id="nCh-pU-Wlf"/>
+                <constraint firstItem="7hA-ZT-e1g" firstAttribute="centerY" secondItem="iwX-Xw-A0M" secondAttribute="centerY" id="qbT-up-ORW"/>
+                <constraint firstItem="iwX-Xw-A0M" firstAttribute="centerY" secondItem="tH5-2n-MXV" secondAttribute="centerY" id="qc4-74-KzB"/>
+                <constraint firstItem="ryf-bz-MK6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="r3L-cU-zqi"/>
+                <constraint firstItem="DcT-5C-HAV" firstAttribute="top" secondItem="l50-tS-9AB" secondAttribute="top" id="vAK-9a-Zci"/>
+            </constraints>
+            <size key="customSize" width="353" height="201"/>
+            <connections>
+                <outlet property="activityIndicator" destination="iwX-Xw-A0M" id="z3J-3T-PJJ"/>
+                <outlet property="imageView" destination="l50-tS-9AB" id="FZd-rK-uAW"/>
+                <outlet property="leadingConstraints" destination="e3d-7g-0FT" id="mwT-lZ-2Uc"/>
+                <outlet property="loadingLbl" destination="7hA-ZT-e1g" id="Iwy-zY-pIs"/>
+                <outlet property="mediaNotFoundLbl" destination="ryf-bz-MK6" id="4S1-ZJ-P4D"/>
+                <outlet property="playimg" destination="j4c-WA-5xO" id="Cra-WS-aaM"/>
+                <outlet property="tapView" destination="DcT-5C-HAV" id="3u7-KR-w1i"/>
+                <outlet property="tralingConstraints" destination="PYl-wL-bwW" id="6gh-Hj-1ZD"/>
+                <outlet property="webView" destination="tH5-2n-MXV" id="TWO-Bw-GoB"/>
+                <outlet property="youTubePlayerView" destination="sG7-ik-waR" id="k5r-Ip-8mn"/>
+            </connections>
+            <point key="canvasLocation" x="257.5" y="209.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="content_placeholder" width="320" height="320"/>
+        <image name="video_play_button" width="25" height="25"/>
+    </resources>
+</document>
